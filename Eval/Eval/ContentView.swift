@@ -10,16 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            
             Group{
                 HomeView()
                     .tabItem {
-                        Label("Home", systemImage: "gamecontroller")
+                        Image(systemName: "gamecontroller")
                     }
                 
                 FavoriteView()
                     .tabItem {
-                        Label("Favorite", systemImage: "star")
+                        Image(systemName: "star")
+                           
                     }
             }
             .toolbarBackground(.black, for: .tabBar)

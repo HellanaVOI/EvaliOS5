@@ -59,9 +59,6 @@ class DataManager{
         fav.name = nameGame
         fav.insertDate = Date()
         
-        print("Fav : \(fav.id)//\(fav.name)")
-        print("Input : \(idGame)//\(nameGame)")
-        
         saveContext()
     }
     

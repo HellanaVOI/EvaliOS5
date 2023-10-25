@@ -14,9 +14,12 @@ struct FavoriteView: View {
     var body: some View {
         List{
             ForEach(viewModel.listFav){ favorite in
-                HStack{
+                VStack{
                     Text(favorite.name ?? "")
-                    
+                        .font(.title)
+                    Text(favorite.insertDate ?? Date(), style: .date)
+                        .font(.footnote)
+
                 }
                 
             }
